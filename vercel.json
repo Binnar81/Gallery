@@ -1,0 +1,17 @@
+{
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "installCommand": "npm install --production=false"
+  },
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "engines": {
+    "node": "18.x"
+  }
+}
