@@ -3,7 +3,7 @@ import { useDropzone } from 'react-dropzone'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Upload, X, Image as ImageIcon } from 'lucide-react'
+import { Upload, X } from 'lucide-react'
 import { api } from '@/lib/api'
 import toast from 'react-hot-toast'
 
@@ -17,7 +17,7 @@ export default function ImageUpload({ onSuccess, onCancel }: ImageUploadProps) {
   const [description, setDescription] = useState('')
   const [uploading, setUploading] = useState(false)
   const [preview, setPreview] = useState<string | null>(null)
-  const [file, setFile] = useState<File | null>(null)
+  const [file, setFile] = useState<File | null | any>(null)
 
   const onDrop = useCallback((acceptedFiles: File[]) => {
     const file = acceptedFiles[0]
