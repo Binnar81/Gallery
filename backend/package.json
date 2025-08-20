@@ -2,14 +2,13 @@
   "name": "gallery-backend",
   "version": "1.0.0",
   "description": "Backend for Image Management Platform",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "scripts": {
-  "dev": "nodemon src/index.ts",
-  "build": "tsc",
-  "start": "node dist/index.js",
-  "render-build": "npm run build"
-},
-
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "render-build": "npm run build"
+  },
   "dependencies": {
     "express": "^4.18.2",
     "mongoose": "^8.0.3",
@@ -34,4 +33,4 @@
     "nodemon": "^3.0.2",
     "ts-node": "^10.9.2"
   }
-} 
+}
