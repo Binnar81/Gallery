@@ -2,7 +2,7 @@
   "name": "gallery-mern",
   "version": "1.0.0",
   "description": "Full Stack Image Management Platform",
-  "main": "index.js",
+  "main": "backend/src/index.ts",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd backend && npm run dev",
